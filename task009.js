@@ -7,7 +7,8 @@ What if the string is empty? Then the result should be empty object literal, {}.
 
 const example1 = "aba";
 const example2 = "tester";
-const example3 = "";
+const example3 = "commit this";
+const example4 = "";
 
 
 function count(str) {
@@ -27,3 +28,4 @@ function count(str) {
 console.log(count(example1));
 console.log(count(example2));
 console.log(count(example3));
+console.log(count(example4));
