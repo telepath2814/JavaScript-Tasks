@@ -6,15 +6,13 @@ The next words should be always capitalized.
 */
 
 
-const example1 = "the-stealth-warrior"; // "theStealthWarrior"
-const example2 = "The_Stealth_Warrior"; // "TheStealthWarrior"
-const example3 = "The_Stealth-Warrior"; // "TheStealthWarrior"
+const example1 = "the-stealth-warrior";
+const example2 = "The_Stealth_Warrior";
+const example3 = "The_Stealth-Warrior";
 
 
 function toCamelCase(str) {
-    return str.replace(/_[A-Za-z]|-[A-Za-z]/g, (match, offset) => {
-        return str.slice(offset + 1, offset + 2).toUpperCase();
-    });
+    return str.replace(/_\w|-\w/g, match => match.charAt(1).toUpperCase());
 }
 
 

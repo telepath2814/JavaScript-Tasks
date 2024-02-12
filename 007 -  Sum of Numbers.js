@@ -10,11 +10,11 @@ function getSum(a, b)
     if (a == b) return a;
 
     let result = 0;
-
     for (i = 0; i <= Math.max(a, b) - Math.min(a, b); i++) {
         result += Math.min(a, b) + i;
     }
     return result;
 }
 
-console.log(getSum(2, 3));
+
+console.log(getSum(0, 3));

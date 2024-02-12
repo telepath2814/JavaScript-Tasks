@@ -1,6 +1,9 @@
 /*
-Найти в заданной строке самую длинную подстроку с четным количеством символов, и содержащую только буквы.
+Find in a given string the longest substring with an even number of characters. Substring must contain only letters.
 */
+
+
+const example1 = 'sda12!8fhf  wqeqew( Rewqrg*)tyyUA';
 
 
 function getLongestEven(str) {
@@ -15,13 +18,11 @@ function getLongestEven(str) {
             if (strTmp.length % 2 == 0 && strTmp.length > result.length) {
                 result = strTmp.slice();
             }
-
             strTmp = '';
         }
    }
-
    return result;
 }
 
 
-console.log(getLongestEven('Asda12!8fhf  wqeqew( Rewqrg*)tyyUA'));
+console.log(getLongestEven(example1));
